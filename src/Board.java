@@ -4,8 +4,12 @@ import java.util.HashMap;
 public class Board {
     private HashMap<String, String> wordsMap;
 
+    Board(){
+        wordsMap = new HashMap<>();
+    }
+
     void addWord(Player player, String word) {
-        System.out.println();
+        System.out.println(player.getName() + " submitted the word " + word);
         wordsMap.put(player.getName(), word);
     }
 }
