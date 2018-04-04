@@ -16,6 +16,23 @@ public class Player implements Runnable {
         Thread.sleep(300);
         return true;
     }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public Game getGame() {
+        return game;
+    }
+
+    public void setGame(Game game) {
+        this.game = game;
+    }
+
     //implement the run() method, that will repeatedly create and submit words
     //implement the toString() method
 }
