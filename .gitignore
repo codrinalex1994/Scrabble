@@ -3,5 +3,4 @@
 .idea/modules.xml
 .idea/workspace.xml
 resources/META-INF/plugin.xml
-.idea/vcs.xml
-Scrabble.iml
+.idea
