@@ -30,8 +30,7 @@ public class Game {
 
     public void start() {
         for (Player player : players) {
-            player.start();
+            new Thread(player).start();
         }
     }
-    //Create the method that will start the game: start one thread for each player
 }
