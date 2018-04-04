@@ -6,6 +6,7 @@ public class Game {
     private Board board;
     //private Dictionary dictionary;
     private final List<Player> players = new ArrayList<>();
+
     public void addPlayer(Player player) {
         players.add(player);
         player.setGame(this);
@@ -25,6 +26,12 @@ public class Game {
 
     public void setBoard(Board board) {
         this.board = board;
+    }
+
+    public void start() {
+        for (Player player : players) {
+            player.start();
+        }
     }
     //Create the method that will start the game: start one thread for each player
 }
