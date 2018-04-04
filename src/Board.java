@@ -8,7 +8,7 @@ public class Board {
         wordsMap = new HashMap<>();
     }
 
-    void addWord(Player player, String word) {
+    public synchronized void addWord(Player player, String word) {
         System.out.println(player.getName() + " submitted the word " + word);
         wordsMap.put(player.getName(), word);
     }
